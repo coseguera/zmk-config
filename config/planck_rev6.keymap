@@ -57,7 +57,7 @@
 	&kp N1    &kp N2  &kp N3    &kp N4    &kp N5    &trans &trans &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
 	&kp GRAVE &kp TAB &kp UNDER &kp MINUS &kp PLUS  &trans &trans &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp SQT 
 	&kp TILDE &none   &none     &none     &kp EQUAL &trans &trans &kp EQUAL &kp LBKT  &kp RBKT  &kp MINUS &kp BSLH 
-	&trans    &trans  &trans    &trans    &trans    &trans &trans &trans    &trans    &trans    &trans    &trans 
+	&trans    &trans  &trans    &trans    &trans    &trans &trans &trans    &kp DEL    &trans    &trans    &trans 
 			>;
 		};
 
@@ -66,7 +66,7 @@
 	&kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &trans &trans &kp CARET &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR
 	&kp F1   &kp F2 &kp F3   &kp F4   &kp F5    &trans &trans &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &kp DQT 
 	&kp F6   &kp F7 &kp F8   &kp F9   &kp F10   &trans &trans &kp PLUS  &kp LBRC &kp RBRC  &kp UNDER &kp PIPE 
-	&trans   &trans &trans   &kp F11  &kp F12   &trans &trans &trans    &trans   &trans    &trans    &trans 
+	&trans   &trans &trans   &kp F11  &kp F12   &trans &trans &trans    &kp DEL   &trans    &trans    &trans 
 			>;
 		};
 	};
