@@ -17,50 +17,40 @@
 			key-positions = <1 2>;
             bindings = <&kp ESC>;
 		};
-		combo_tab {
-			timeout-ms = <50>;
-			key-positions = <13 14>;
-            bindings = <&kp TAB>;
-		};
 		combo_enter {
 			timeout-ms = <50>;
-			key-positions = <25 26>;
+			key-positions = <13 14>;
             bindings = <&kp ENTER>;
+		};
+		combo_tab {
+			timeout-ms = <50>;
+			key-positions = <25 26>;
+            bindings = <&kp TAB>;
 		};
 		combo_equal {
 			timeout-ms = <50>;
-			key-positions = <2 3>;
-            bindings = <&kp EQUAL>;
-		};
-		combo_minus {
-			timeout-ms = <50>;
 			key-positions = <14 15>;
-            bindings = <&kp MINUS>;
-		};
-		combo_lbkt {
-			timeout-ms = <50>;
-			key-positions = <8 9>;
-            bindings = <&kp LBKT>;
-		};
-		combo_rbkt {
-			timeout-ms = <50>;
-			key-positions = <9 10>;
-            bindings = <&kp RBKT>;
-		};
-		combo_bslh {
-			timeout-ms = <50>;
-			key-positions = <10 11>;
-            bindings = <&kp BSLH>;
+            bindings = <&kp EQUAL>;
 		};
 		combo_grave {
 			timeout-ms = <50>;
 			key-positions = <19 20>;
             bindings = <&kp GRAVE>;
 		};
-		combo_sqt {
+		combo_lbkt {
 			timeout-ms = <50>;
 			key-positions = <20 21>;
-            bindings = <&kp SQT>;
+            bindings = <&kp LBKT>;
+		};
+		combo_rbkt {
+			timeout-ms = <50>;
+			key-positions = <21 22>;
+            bindings = <&kp RBKT>;
+		};
+		combo_bslh {
+			timeout-ms = <50>;
+			key-positions = <34 35>;
+            bindings = <&kp BSLH>;
 		};
 	};
 };
@@ -76,10 +66,10 @@
 // | sZ   | cX   |  C   |  V   |  B   |||   N   |  M    |  ,   | c.   |  s/   |
 // |      |      |      |G-ENT |  l1  ||| l2-SPC| BSPACE|      |      |       |
 			bindings = <
-	&kp Q        &kp W       &kp E    &kp R          &kp T &trans &trans &kp Y       &kp U    &kp I     &kp O          &kp P
-	&kp A        &kp S       &kp D    &kp F          &kp G &trans &trans &kp H       &kp J    &kp K     &kp L          &mt LALT SEMI
-	&mt LSHIFT Z &mt LCTRL X &kp C    &kp V          &kp B &trans &trans &kp N       &kp M    &kp COMMA &mt RCTRL DOT  &mt RSHIFT SLASH
-	&trans       &trans      &trans   &mt LGUI ENTER &mo 1 &trans &trans &lt 2 SPACE &kp BSPC &trans 	&trans         &trans
+	&kp Q        &kp W  &kp E    &kp R           &kp T     &trans &trans &kp Y          &kp U         &kp I     &kp O    &kp P
+	&kp A        &kp S  &kp D    &kp F           &kp G     &trans &trans &kp H          &kp J         &kp K     &kp L    &kp SEMI
+	&mt LSHIFT Z &kp X  &kp C    &kp V           &kp B     &trans &trans &kp N          &kp M         &kp COMMA &kp DOT  &mt RSHIFT SLASH
+	&trans       &trans &trans   &mt LCTRL MINUS &lt 1 SQT &trans &trans &mt LALT SPACE &mt LGUI BSPC &trans 	&trans   &trans
 			>;
 		};
 
@@ -88,7 +78,7 @@
 	&kp N1   &kp N2 &kp N3   &kp N4   &kp N5    &trans &trans &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
 	&kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &trans &trans &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR
 	&none    &none  &none    &none    &none     &trans &trans &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none
-	&trans   &trans &trans   &trans   &trans    &trans &trans &trans    &kp DEL   &trans    &trans    &trans 
+	&trans   &trans &trans   &trans   &trans    &trans &trans &mo 2     &kp DEL   &trans    &trans    &trans 
 			>;
 		};
 
