@@ -2,93 +2,93 @@
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
-	quick-tap-ms = <200>;
-	flavor = "balanced";
+    quick-tap-ms = <200>;
+    flavor = "balanced";
 };
 &lt {
-	quick-tap-ms = <200>;
+    quick-tap-ms = <200>;
 };
 
 / {
-	combos {
-		compatible = "zmk,combos";
-		combo_esc {
-			timeout-ms = <50>;
-			key-positions = <1 2>;
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <1 2>;
             bindings = <&kp ESC>;
-		};
-		combo_enter {
-			timeout-ms = <50>;
-			key-positions = <13 14>;
+        };
+        combo_enter {
+            timeout-ms = <50>;
+            key-positions = <13 14>;
             bindings = <&kp ENTER>;
-		};
-		combo_tab {
-			timeout-ms = <50>;
-			key-positions = <25 26>;
+        };
+        combo_tab {
+            timeout-ms = <50>;
+            key-positions = <25 26>;
             bindings = <&kp TAB>;
-		};
-		combo_equal {
-			timeout-ms = <50>;
-			key-positions = <14 15>;
+        };
+        combo_equal {
+            timeout-ms = <50>;
+            key-positions = <14 15>;
             bindings = <&kp EQUAL>;
-		};
-		combo_grave {
-			timeout-ms = <50>;
-			key-positions = <19 20>;
+        };
+        combo_grave {
+            timeout-ms = <50>;
+            key-positions = <19 20>;
             bindings = <&kp GRAVE>;
-		};
-		combo_lbkt {
-			timeout-ms = <50>;
-			key-positions = <20 21>;
+        };
+        combo_lbkt {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
             bindings = <&kp LBKT>;
-		};
-		combo_rbkt {
-			timeout-ms = <50>;
-			key-positions = <21 22>;
+        };
+        combo_rbkt {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
             bindings = <&kp RBKT>;
-		};
-		combo_bslh {
-			timeout-ms = <50>;
-			key-positions = <34 35>;
+        };
+        combo_bslh {
+            timeout-ms = <50>;
+            key-positions = <34 35>;
             bindings = <&kp BSLH>;
-		};
-	};
+        };
+    };
 };
 
 / {
-	keymap {
-		compatible = "zmk,keymap";
+    keymap {
+        compatible = "zmk,keymap";
 
-		default_layer {
+        default_layer {
 // -----------------------------------------------------------------------------------------
 // |  Q   |  W   |  E   |  R   |  T   |||   Y   |  U    |  I   |  O   |   P   |
 // |  A   |  S   |  D   |  F   |  G   |||   H   |  J    |  K   |  L   |  x;   |
 // | sZ   | cX   |  C   |  V   |  B   |||   N   |  M    |  ,   | c.   |  s/   |
 // |      |      |      |G-ENT |  l1  ||| l2-SPC| BSPACE|      |      |       |
-			bindings = <
-	&kp Q        &kp W  &kp E   &kp R           &kp T        &trans &trans &kp Y       &kp U         &kp I     &kp O    &kp P
-	&kp A        &kp S  &kp D   &kp F           &kp G        &trans &trans &kp H       &kp J         &kp K     &kp L    &kp SEMI
-	&mt LSHIFT Z &kp X  &kp C   &kp V           &kp B        &trans &trans &kp N       &kp M         &kp COMMA &kp DOT  &mt RSHIFT SLASH
-	&trans       &trans &trans  &mt LCTRL MINUS &mt LGUI SQT &trans &trans &lt 1 SPACE &mt LALT BSPC &trans    &trans   &trans
-			>;
-		};
+            bindings = <
+    &kp Q        &kp W        &kp E   &kp R     &kp T        &trans &trans &kp Y       &kp U    kp I     &kp O     	    &kp P
+    &kp A        &kp S        &kp D   &kp F     &kp G        &trans &trans &kp H       &kp J    &kp K     &kp L     	    &mt LALT SEMI
+    &mt LSHIFT Z &mt LCTRL X  &kp C   &kp V     &kp B        &trans &trans &kp N       &kp M    &kp COMMA &mt RCTRL DOT  &mt RSHIFT SLASH
+    &trans       &trans       &trans  &kp ENTER &mt LGUI SQT &trans &trans &lt 1 SPACE &kp BSPC &trans    &trans    	    &trans
+            >;
+        };
 
-		first_layer {
-			bindings = <
-	&kp N1   &kp N2 &kp N3   &kp N4   &kp N5    &trans &trans &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
-	&kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &trans &trans &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR
-	&none    &none  &none    &none    &none     &trans &trans &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none
-	&trans   &trans &trans   &trans   &mo 2     &trans &trans &trans    &kp DEL   &trans    &trans    &trans 
-			>;
-		};
+        first_layer {
+            bindings = <
+    &kp N1   &kp N2 &kp N3   &kp N4   &kp N5    &trans &trans &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
+    &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &trans &trans &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR
+    &none    &none  &none    &none    &none     &trans &trans &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none
+    &trans   &trans &trans   &trans   &mo 2     &trans &trans &trans    &kp DEL   &trans    &trans    &trans 
+            >;
+        };
 
-		second_layer {
-			bindings = <
-	&kp F1 &kp F2 &kp F3 &kp F4   &kp F5    &trans &trans &none    &none     &none     &none   &none
-	&kp F6 &kp F7 &kp F8 &kp F9   &kp F10   &trans &trans &none    &none     &none     &none   &none
-	&none  &none  &none  &kp F11  &kp F12   &trans &trans &kp HOME &kp PG_DN &kp PG_UP &kp END &none 
-	&none  &none  &none  &none    &none     &trans &trans &none    &none     &none     &none   &none 
-			>;
-		};
-	};
+        second_layer {
+            bindings = <
+    &kp F1 &kp F2 &kp F3 &kp F4   &kp F5    &trans &trans &none    &none     &none     &none   &none
+    &kp F6 &kp F7 &kp F8 &kp F9   &kp F10   &trans &trans &none    &none     &none     &none   &none
+    &none  &none  &none  &kp F11  &kp F12   &trans &trans &kp HOME &kp PG_DN &kp PG_UP &kp END &none 
+    &none  &none  &none  &none    &none     &trans &trans &none    &none     &none     &none   &none 
+            >;
+        };
+    };
 };
