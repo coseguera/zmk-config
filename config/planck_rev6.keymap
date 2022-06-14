@@ -29,13 +29,18 @@
         };
         combo_equal {
             timeout-ms = <50>;
-            key-positions = <14 15>;
+            key-positions = <2 3>;
             bindings = <&kp EQUAL>;
         };
         combo_minus {
             timeout-ms = <50>;
-            key-positions = <20 21>;
+            key-positions = <14 15>;
             bindings = <&kp MINUS>;
+        };
+        combo_sqt {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&kp SQT>;
         };
         combo_lbkt {
             timeout-ms = <50>;
