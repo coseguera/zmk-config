@@ -73,13 +73,13 @@
 // -----------------------------------------------------------------------------------------
 // |  Q   |  W   |  E   |  R   |  T   |||   Y   |  U    |  I   |  O   |   P   |
 // |  A   |  S   |  D   |  F   |  G   |||   H   |  J    |  K   |  L   |  x;   |
-// | sZ   | cX   |  C   |  V   |  B   |||   N   |  M    |  ,   | c.   |  s/   |
-// |      |      |      |G-ENT |  l1  ||| l1-SPC| BSPACE|      |      |       |
+// |  Z   | cX   |  C   |  V   |  B   |||   N   |  M    |  ,   | c.   |   /   |
+// |      |      |      |G-ENT |SHIFT ||| l1-SPC| BSPACE|      |      |       |
             bindings = <
-    &kp Q        &kp W        &kp E   &kp R          &kp T &trans &trans &kp Y       &kp U    &kp I     &kp O          &kp P
-    &kp A        &kp S        &kp D   &kp F          &kp G &trans &trans &kp H       &kp J    &kp K     &kp L          &mt LALT SEMI
-    &mt LSHIFT Z &mt LCTRL X  &kp C   &kp V          &kp B &trans &trans &kp N       &kp M    &kp COMMA &mt RCTRL DOT  &mt RSHIFT SLASH
-    &trans       &trans       &trans  &mt LGUI ENTER &mo 1 &trans &trans &lt 1 SPACE &kp BSPC &trans    &trans         &trans
+    &kp Q  &kp W        &kp E   &kp R          &kp T      &trans &trans &kp Y       &kp U    &kp I     &kp O          &kp P
+    &kp A  &kp S        &kp D   &kp F          &kp G      &trans &trans &kp H       &kp J    &kp K     &kp L          &mt LALT SEMI
+    &kp Z  &mt LCTRL X  &kp C   &kp V          &kp B      &trans &trans &kp N       &kp M    &kp COMMA &mt RCTRL DOT  &kp SLASH
+    &trans &trans       &trans  &mt LGUI ENTER &kp LSHIFT &trans &trans &lt 1 SPACE &kp BSPC &trans    &trans         &trans
             >;
         };
 
@@ -88,7 +88,7 @@
     &kp N1   &kp N2 &kp N3   &kp N4   &kp N5    &trans &trans &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
     &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &trans &trans &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR
     &none    &none  &none    &none    &none     &trans &trans &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &none
-    &trans   &trans &trans   &mo 2    &trans    &trans &trans &trans    &kp DEL   &trans    &trans    &trans 
+    &trans   &trans &trans   &trans   &mo 2     &trans &trans &trans    &kp DEL   &trans    &trans    &trans 
             >;
         };
 
