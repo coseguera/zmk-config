@@ -60,10 +60,10 @@
 
         first_layer {
             bindings = <
-    &kp N1   &kp N2   &kp N3   &kp N4   &kp N5    &trans &trans &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
-    &kp EXCL &kp AT   &kp HASH &kp DLLR &kp PRCNT &trans &trans &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR
-    &kp LBKT &kp RBKT &kp LBRC &kp RBRC &kp EQUAL &trans &trans &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp BSLH
-    &trans   &trans   &trans   &mo 2    &trans    &trans &trans &trans    &kp DEL   &trans    &trans    &trans 
+    &kp N1          &kp N2   &kp N3   &kp N4   &kp N5    &trans &trans &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
+    &kp EXCL        &kp AT   &kp HASH &kp DLLR &kp PRCNT &trans &trans &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR
+    &mt LSHIFT LBKT &kp RBKT &kp LBRC &kp RBRC &kp EQUAL &trans &trans &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &mt RSHIFT BSLH
+    &trans          &trans   &trans   &mo 2    &trans    &trans &trans &trans    &kp DEL   &trans    &trans    &trans 
             >;
         };
 
