@@ -77,7 +77,7 @@
             bindings = <
     &kp N1     &kp N2     &kp N3       &kp N4         &kp N5        &none &none &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
     &kp EXCL   &kp AT     &kp HASH     &kp DLLR       &kp PRCNT     &none &none &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR
-    &kp LSHIFT &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DOWN &none         &none &none &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &mt RSHIFT SLASH
+    &kp LSHIFT &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DOWN &kp LC(LS(M)) &none &none &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &mt RSHIFT SLASH
     &none      &none      &trans       &trans         &lt 2 ENTER   &none &none &trans    &trans    &trans    &none     &none 
             >;
         };
