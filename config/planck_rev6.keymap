@@ -67,22 +67,16 @@
 
 / {
     macros {
-        bkts: bkts {
-            compatible = "zmk,behavior-macro";
-            label = "bkts";
-            #binding-cells = <0>;
+        ZMK_MACRO(bkts_macro,
             wait-ms = <30>;
             tap-ms = <40>;
             bindings = <&kp LBKT &kp RBKT>;
-        };
-        brcs: brcs {
-            compatible = "zmk,behavior-macro";
-            label = "brcs";
-            #binding-cells = <0>;
+        );
+        ZMK_MACRO(brcs_macro,
             wait-ms = <30>;
             tap-ms = <40>;
             bindings = <&kp LBRC &kp RBRC>;
-        };
+        );
     };
 };
 
@@ -92,19 +86,19 @@
 
         default_layer {
             bindings = <
-    &kp Q        &kp W        &kp E &kp R &kp T          &none &none &kp Y       &kp U    &kp I          &kp O          &kp P
-    &kp A        &kp S        &kp D &kp F &kp G          &none &none &kp H       &kp J    &kp K          &kp L          &mt LALT SEMI
-    &mt LSHIFT Z &mt LCTRL X  &kp C &kp V &kp B          &none &none &kp N       &kp M    &mt RGUI COMMA &mt RCTRL DOT  &mt RSHIFT SLASH
-    &none        &none        &none &brcs &mt LGUI ENTER &none &none &lt 1 SPACE &kp BSPC &none          &none          &none
+    &kp Q        &kp W        &kp E &kp R       &kp T          &none &none &kp Y       &kp U    &kp I          &kp O          &kp P
+    &kp A        &kp S        &kp D &kp F       &kp G          &none &none &kp H       &kp J    &kp K          &kp L          &mt LALT SEMI
+    &mt LSHIFT Z &mt LCTRL X  &kp C &kp V       &kp B          &none &none &kp N       &kp M    &mt RGUI COMMA &mt RCTRL DOT  &mt RSHIFT SLASH
+    &none        &none        &none &bkts_macro &mt LGUI ENTER &none &none &lt 1 SPACE &kp BSPC &none          &none          &none
             >;
         };
 
         first_layer {
             bindings = <
-    &kp N1          &kp N2   &kp N3   &kp N4   &kp N5      &none &none &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
-    &kp EXCL        &kp AT   &kp HASH &kp DLLR &kp PRCNT   &none &none &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR
-    &kp LSHIFT LBKT &kp RBKT &kp LBRC &kp RBRC &none       &none &none &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &mt RSHIFT SLASH
-    &none           &none    &none    &bkts    &lt 2 ENTER &none &none &trans    &trans    &trans    &none     &none
+    &kp N1          &kp N2   &kp N3   &kp N4      &kp N5      &none &none &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
+    &kp EXCL        &kp AT   &kp HASH &kp DLLR    &kp PRCNT   &none &none &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR
+    &kp LSHIFT LBKT &kp RBKT &kp LBRC &kp RBRC    &none       &none &none &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &mt RSHIFT SLASH
+    &none           &none    &none    &brcs_macro &lt 2 ENTER &none &none &trans    &trans    &trans    &none     &none
             >;
         };
 
