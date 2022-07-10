@@ -70,12 +70,12 @@
         ZMK_MACRO(bkts_macro,
             wait-ms = <30>;
             tap-ms = <40>;
-            bindings = <&kp LBKT &kp RBKT &kp LEFT>;
+            bindings = <&kp LBKT &kp RBKT>;
         )
         ZMK_MACRO(brcs_macro,
             wait-ms = <30>;
             tap-ms = <40>;
-            bindings = <&kp LBRC &kp RBRC &kp LEFT>;
+            bindings = <&kp LBRC &kp RBRC>;
         )
     };
 };
