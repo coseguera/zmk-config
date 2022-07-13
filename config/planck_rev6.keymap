@@ -62,6 +62,11 @@
             key-positions = <34 35>;
             bindings = <&kp BSLH>;
         };
+        combo_del {
+            timeout-ms = <50>;
+            key-positions = <32 44>;
+            bindings = <&kp DEL>;
+        };
     };
 };
 
