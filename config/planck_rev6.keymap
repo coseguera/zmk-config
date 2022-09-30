@@ -112,19 +112,19 @@
 
         default_layer {
             bindings = <
-    &kp Q        &kp W       &kp E   &kp R       &kp T          &none &none &kp Y       &kp U      &kp I          &kp O       &kp P
-    &mt LALT A   &mt LCTRL S &lt 2 D &mt LGUI F  &kp G          &none &none &kp H       &mt LGUI J &lt 3 K        &mt LCTRL L &mt LALT SEMI
-    &ht LSHIFT Z &kp X       &kp C   &kp V       &kp B          &none &none &kp N       &kp M      &kp COMMA      &kp DOT     &ht RSHIFT SLASH
-    &none        &none       &none   &bkts_macro &mt LGUI ENTER &none &none &lt 1 SPACE &kp BSPC   &none          &none       &none
+    &kp Q        &kp W       &kp E   &kp R       &kp T     &none &none &kp Y       &kp U      &kp I          &kp O       &kp P
+    &mt LALT A   &mt LCTRL S &lt 2 D &mt LGUI F  &kp G     &none &none &kp H       &mt LGUI J &lt 3 K        &mt LCTRL L &mt LALT SEMI
+    &ht LSHIFT Z &kp X       &kp C   &kp V       &kp B     &none &none &kp N       &kp M      &kp COMMA      &kp DOT     &ht RSHIFT SLASH
+    &none        &none       &none   &bkts_macro &kp ENTER &none &none &lt 1 SPACE &kp BSPC   &none          &none       &none
             >;
         };
 
         first_layer {
             bindings = <
-    &kp N1        &kp N2       &kp N3     &kp N4        &kp N5      &none &none &kp N6    &kp N7        &kp N8      &kp N9         &kp N0
-    &mt LALT EXCL &mt LCTRL AT &lt 2 HASH &mt LGUI DLLR &kp PRCNT   &none &none &kp CARET &mt LGUI AMPS &lt 3 ASTRK &mt LCTRL LPAR &mt LALT RPAR
-    &kp LBKT      &kp RBKT     &kp LBRC   &kp RBRC      &none       &none &none &kp LEFT  &kp DOWN      &kp UP      &kp RIGHT      &kp SLASH
-    &none         &none        &none      &brcs_macro   &lt 2 ENTER &none &none &trans    &trans        &trans      &none          &none
+    &kp N1        &kp N2       &kp N3     &kp N4        &kp N5    &none &none &kp N6    &kp N7        &kp N8      &kp N9         &kp N0
+    &mt LALT EXCL &mt LCTRL AT &lt 2 HASH &mt LGUI DLLR &kp PRCNT &none &none &kp CARET &mt LGUI AMPS &lt 3 ASTRK &mt LCTRL LPAR &mt LALT RPAR
+    &kp LBKT      &kp RBKT     &kp LBRC   &kp RBRC      &none     &none &none &kp LEFT  &kp DOWN      &kp UP      &kp RIGHT      &kp SLASH
+    &none         &none        &none      &brcs_macro   &trans    &none &none &trans    &trans        &trans      &none          &none
             >;
         };
 
