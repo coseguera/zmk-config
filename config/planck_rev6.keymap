@@ -9,6 +9,13 @@
 &lt {
     quick-tap-ms = <200>;
 };
+&mmv {
+    time-to-max-speed-ms = <50>;
+    acceleration-exponent=<1>;
+};
+&mwh {
+    acceleration-exponent=<1>;
+};
 
 / {
     ht: hold_tap {
